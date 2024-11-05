@@ -1,0 +1,11 @@
+
+
+.shopbox{
+
+   width: 12vw;
+   height: 7vh;
+   background-color: whitesmoke;
+   border-radius: 20px;
+   position: relative;top: 11vh;left: 42vw;
+   cursor: pointer;
+}

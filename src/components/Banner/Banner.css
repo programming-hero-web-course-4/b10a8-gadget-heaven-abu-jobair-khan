@@ -1,0 +1,24 @@
+
+
+.bannerbox{
+
+   width: 65vw;
+   height: 48vh;
+   z-index: 1;
+   border: 5px solid white;
+   backdrop-filter: blur(10px);
+   border-radius: 20px;
+   position: relative;
+   left: 20vw;
+   bottom: 15vh;
+}
+
+.img{
+
+   width: 62vw;
+   height: 55vh;
+   border-radius: 10px;
+   object-fit: fill;
+   
+   
+}

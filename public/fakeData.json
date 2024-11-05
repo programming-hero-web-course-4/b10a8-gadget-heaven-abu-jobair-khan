@@ -1,0 +1,209 @@
+[
+   {
+       "product_id": "LP001",
+       "product_title": "TechPro Ultrabook 14",
+       "product_image": "https://cdn.mos.cms.futurecdn.net/Ajc3ezCTN4FGz2vF4LpQn9.jpg",
+       "category": "Laptop",
+       "price": 899.99,
+       "description": "The TechPro Ultrabook 14 is a lightweight, powerful laptop with a sleek design and long-lasting battery.",
+       "specification": [
+           {"Processor": "Intel Core i5"},
+           {"RAM": "8GB DDR4"},
+           {"Storage": "256GB SSD"},
+           {"Display": "14-inch Full HD"},
+           {"Battery Life": "Up to 10 hours"},
+           {"Operating System": "Windows 11"}
+       ],
+       "availability": true,
+       "rating": 4.5
+   },
+   {
+       "product_id": "LP002",
+       "product_title": "EliteBook Pro 15",
+       "product_image": "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08228847.png",
+       "category": "Laptop",
+       "price": 1299.99,
+       "description": "The EliteBook Pro 15 combines robust performance with premium security features, ideal for business users.",
+       "specification": [
+           {"Processor": "Intel Core i7"},
+           {"RAM": "16GB DDR4"},
+           {"Storage": "512GB SSD"},
+           {"Display": "15.6-inch Full HD"},
+           {"Battery Life": "Up to 12 hours"},
+           {"Operating System": "Windows 11 Pro"}
+       ],
+       "availability": true,
+       "rating": 4.8
+   },
+   {
+       "product_id": "LP003",
+       "product_title": "GamingMax G17",
+       "product_image": "https://cdn.wccftech.com/wp-content/uploads/2021/07/AORUS-RTX3080TI-GAMING-BOX-1-1-740x595.jpg",
+       "category": "Laptop",
+       "price": 1599.99,
+       "description": "The GamingMax G17 is designed for gaming enthusiasts, with high-end graphics and a powerful processor.",
+       "specification": [
+           {"Processor": "AMD Ryzen 7"},
+           {"RAM": "16GB DDR4"},
+           {"Storage": "1TB SSD"},
+           {"Display": "17.3-inch Full HD, 144Hz"},
+           {"Battery Life": "Up to 6 hours"},
+           {"Graphics Card": "NVIDIA GeForce RTX 3060"},
+           {"Operating System": "Windows 10"}
+       ],
+       "availability": false,
+       "rating": 4.6
+   },
+   {
+       "product_id": "LP004",
+       "product_title": "Student Essential 13",
+       "product_image": "https://mcsolution.com.bd/wp-content/uploads/2024/04/MSI-Titan-18-HX-A14VHG-2024-14th-Gen-Gaming-Laptop-price-in-Bangladesh-MC-Solution-BD-1200x900.webp",
+       "category": "Laptop",
+       "price": 499.99,
+       "description": "An affordable, durable laptop designed for students, offering essential features for daily use.",
+       "specification": [
+           {"Processor": "Intel Core i3"},
+           {"RAM": "4GB DDR4"},
+           {"Storage": "128GB SSD"},
+           {"Display": "13.3-inch HD"},
+           {"Battery Life": "Up to 8 hours"},
+           {"Operating System": "Windows 10 Home"}
+       ],
+       "availability": true,
+       "rating": 4.2
+   },
+   {
+       "product_id": "LP005",
+       "product_title": "CreativePro X16",
+       "product_image": "https://m.media-amazon.com/images/I/71qP8xPR1nL._AC_UF1000,1000_QL80_.jpg",
+       "category": "Laptop",
+       "price": 1999.99,
+       "description": "The CreativePro X16 is a powerhouse workstation, built for designers and content creators needing top performance.",
+       "specification": [
+           {"Processor": "Intel Xeon W"},
+           {"RAM": "32GB DDR4"},
+           {"Storage": "1TB SSD"},
+           {"Display": "16-inch 4K UHD"},
+           {"Battery Life": "Up to 7 hours"},
+           {"Graphics Card": "NVIDIA Quadro RTX 5000"},
+           {"Operating System": "Windows 11 Pro"}
+       ],
+       "availability": false,
+       "rating": 4.9
+   },
+   {
+      "product_id": "LP006",
+      "product_title": "CreativePro X16",
+      "product_image": "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08856106.png?impolicy=Png_Res",
+      "category": "Laptop",
+      "price": 1999.99,
+      "description": "The CreativePro X16 is a powerhouse workstation, built for designers and content creators needing top performance.",
+      "specification": [
+          {"Processor": "Intel Xeon W"},
+          {"RAM": "32GB DDR4"},
+          {"Storage": "1TB SSD"},
+          {"Display": "16-inch 4K UHD"},
+          {"Battery Life": "Up to 7 hours"},
+          {"Graphics Card": "NVIDIA Quadro RTX 5000"},
+          {"Operating System": "Windows 11 Pro"}
+      ],
+      "availability": false,
+      "rating": 4.9
+  },
+  {
+   "product_id": "SP001",
+   "product_title": "Galaxy XPro",
+   "product_image": "https://dvf83rt16ac4w.cloudfront.net/upload/product/20240123_1705987892_224395.jpeg",
+   "category": "Smartphone",
+   "price": 799.99,
+   "description": "The Galaxy XPro offers an immersive display, powerful performance, and a stunning camera, all in a sleek design.",
+   "specification": [
+       {"Processor": "Qualcomm Snapdragon 888"},
+       {"RAM": "8GB"},
+       {"Storage": "128GB"},
+       {"Display": "6.5-inch AMOLED, 120Hz"},
+       {"Battery": "4500mAh"},
+       {"Camera": "108MP Triple Camera"},
+       {"Operating System": "Android 12"}
+   ],
+   "availability": true,
+   "rating": 4.7
+},
+{
+   "product_id": "SP002",
+   "product_title": "iPhone Z13",
+   "product_image": "https://sony.scene7.com/is/image/sonyglobalsolutions/3075_Primary_image_khakigreen-1200?$mediaCarouselSmall$&fmt=png-alpha",
+   "category": "Smartphone",
+   "price": 999.99,
+   "description": "The iPhone Z13 features Apple's latest A15 chip, exceptional camera technology, and 5G support for seamless connectivity.",
+   "specification": [
+       {"Processor": "Apple A15 Bionic"},
+       {"RAM": "6GB"},
+       {"Storage": "256GB"},
+       {"Display": "6.1-inch Super Retina XDR"},
+       {"Battery": "3300mAh"},
+       {"Camera": "12MP Dual Camera"},
+       {"Operating System": "iOS 15"}
+   ],
+   "availability": true,
+   "rating": 4.8
+},
+{
+   "product_id": "SP003",
+   "product_title": "Pixel Ultimate 6",
+   "product_image": "https://lh3.googleusercontent.com/yE9yMJZwDrAC53M_s5CrHKsZaj41RcNFVBp6sQPfmLSYdPlQFuKTlkZkivoXDpmhVz13ltiBbUo32gh-_JDfLIkje0vtr7MmmQ=rw-e365-nu-w657",
+   "category": "Smartphone",
+   "price": 699.99,
+   "description": "The Pixel Ultimate 6 is a high-performing phone with exceptional AI-powered camera capabilities and a clean, minimal design.",
+   "specification": [
+       {"Processor": "Google Tensor"},
+       {"RAM": "8GB"},
+       {"Storage": "128GB"},
+       {"Display": "6.4-inch OLED, 90Hz"},
+       {"Battery": "4600mAh"},
+       {"Camera": "50MP Dual Camera"},
+       {"Operating System": "Android 12"}
+   ],
+   "availability": false,
+   "rating": 4.6
+},
+{
+   "product_id": "SW001",
+   "product_title": "FitLife Watch Pro",
+   "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/Amazfit-GTR-4-Black-4223.jpg",
+   "category": "Smartwatch",
+   "price": 249.99,
+   "description": "The FitLife Watch Pro is a stylish fitness smartwatch packed with health tracking features, ideal for everyday use.",
+   "specification": [
+       {"Display": "1.4-inch AMOLED"},
+       {"Battery Life": "Up to 10 days"},
+       {"Water Resistance": "5 ATM"},
+       {"Heart Rate Monitor": "Yes"},
+       {"GPS": "Built-in"},
+       {"Operating System": "FitLife OS"},
+       {"Compatibility": "iOS & Android"}
+   ],
+   "availability": true,
+   "rating": 4.5
+},
+{
+   "product_id": "SW002",
+   "product_title": "HealthHub Active 2",
+   "product_image": "https://www.apple.com/newsroom/images/product/watch/lifestyle/Apple-Watch-SE-aluminum-silver-220907_inline.jpg.large.jpg",
+   "category": "Smartwatch",
+   "price": 299.99,
+   "description": "The HealthHub Active 2 smartwatch offers comprehensive health insights, from sleep tracking to ECG monitoring, in a sleek package.",
+   "specification": [
+       {"Display": "1.6-inch Retina Display"},
+       {"Battery Life": "Up to 14 days"},
+       {"Water Resistance": "IP68"},
+       {"ECG Monitoring": "Yes"},
+       {"Blood Oxygen Sensor": "Yes"},
+       {"Operating System": "HealthHub OS"},
+       {"Compatibility": "iOS & Android"}
+   ],
+   "availability": false,
+   "rating": 4.7
+}
+
+]
