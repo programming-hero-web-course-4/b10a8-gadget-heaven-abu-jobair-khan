@@ -1,0 +1,35 @@
+
+
+.detailbox{
+
+   width: 65vw;
+   height: 72vh;
+   background-color: rgb(189, 196, 202);
+   position: relative;
+   bottom: 34vh;
+   left: 14vw;
+   border-radius: 20px;
+
+   display: flex;
+   justify-content: space-around;
+}
+
+.in-stock{
+
+   width: 7vw;
+   height: 3vh;
+   text-align: center;
+   background-color: rgb(125, 218, 125);
+   border: 2px solid green;
+   border-radius: 25px;
+}
+ 
+.out-of-stock{
+
+   width: 7vw;
+   height: 3vh;
+   text-align: center;
+   background-color: rgb(199, 99, 99);
+   border: 2px solid red;
+   border-radius: 25px;
+}

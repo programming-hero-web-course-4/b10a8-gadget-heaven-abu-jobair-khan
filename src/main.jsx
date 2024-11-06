@@ -13,6 +13,8 @@ import {
 import Laptop from './components/Laptop/Laptop.jsx';
 import Phone from './components/SmartPhones/Phone.jsx';
 import Watch from './components/Smartwatch/Watch.jsx';
+import ProductDetails from './components/Details/ProductDetails.jsx';
+import Dashboard from './components/DashBoard/Dasboard.jsx';
 
 const route = createBrowserRouter([
   {
@@ -46,7 +48,13 @@ const route = createBrowserRouter([
          ]
       },
       {
-        
+        path:'/details/:id',
+        loader:()=>fetch('./fakeData.json'),
+        element:<ProductDetails></ProductDetails>
+      },
+      {
+        path:'/dashboard',
+        element:<Dashboard></Dashboard>
       }
     ]
   }

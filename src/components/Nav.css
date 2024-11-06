@@ -1,11 +1,42 @@
 
 
-.shopbox{
+.home{
 
-   width: 12vw;
-   height: 7vh;
-   background-color: whitesmoke;
-   border-radius: 20px;
-   position: relative;top: 11vh;left: 42vw;
-   cursor: pointer;
+   display: flex;
+   justify-content: space-around;
 }
+
+.rest-other{
+    position: relative;
+    bottom: 11vh;
+
+ height: 120px;
+
+   display: flex;
+   justify-content: space-around;
+
+   
+   
+}
+
+
+
+.boxStyle{
+   width: 96vw;
+   height: 60vh;
+   background-color: rgba(149, 56, 226, 1);
+   margin-left: 2vw;
+   margin-top: 4vh;
+   border-radius: 20px;
+ }
+ 
+
+.box-style{
+
+ margin-top: 10vh;
+ width:100%;
+ height:52vh;
+ background-color:rgba(149, 56, 226, 1);
+
+}
+

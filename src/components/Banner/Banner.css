@@ -1,5 +1,15 @@
 
 
+.shopbox{
+
+   width: 12vw;
+   height: 7vh;
+   background-color:whitesmoke;
+   border-radius: 20px;
+   position: relative;bottom: 43vh;left: 40vw;
+   cursor: pointer;
+}
+
 .bannerbox{
 
    width: 65vw;
@@ -9,8 +19,8 @@
    backdrop-filter: blur(10px);
    border-radius: 20px;
    position: relative;
-   left: 20vw;
-   bottom: 15vh;
+   left: 17vw;
+   bottom: 35vh;
 }
 
 .img{
