@@ -1,0 +1,24 @@
+
+.footer-box{
+
+   margin-top: 20vh;
+   width: 100%;
+   height: 45vh;
+   background-color: rgb(226, 201, 168);
+}
+
+.heading{
+
+   position: relative;
+   left: 30vw;
+   top: 5vh;
+}
+
+.brdr-top{
+
+   border-top: 2px solid white;
+   width: 75vw;
+
+   position: relative ;
+   top: 10vh;left: 10vw;
+}

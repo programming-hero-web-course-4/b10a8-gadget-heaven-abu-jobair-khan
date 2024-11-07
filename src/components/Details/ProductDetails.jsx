@@ -7,6 +7,8 @@ import { CiShoppingCart } from "react-icons/ci";
 import { FaRegHeart } from "react-icons/fa";
 
 const ProductDetails=()=>{
+
+   
    const {id}=useParams()
    const data=useLoaderData()
 

@@ -1,7 +1,16 @@
+import { useNavigate } from 'react-router-dom';
 import bnrImg from '../../assets/banner.jpg';
 import './Banner.css';
 
 const Banner=()=>{
+
+
+   const navigate = useNavigate()
+
+   const gotoDashboard=()=>{
+
+      navigate('/dashboard');
+   }
 
    return (
       <div>
@@ -12,8 +21,8 @@ const Banner=()=>{
           <p className="text-white  mr-[-20px] w-[40vw] mt-4 text-lg">Gadget Accessories has a variety of gadget accesories.These includes mobile, laptop, charger, headsets etc.All you can get here in affordable price. </p>
       </div>
       
-      <div onClick        className="shopbox">
-            <span className="text-2xl font bold text-center">Shop Now</span>
+      <div onClick={gotoDashboard}    className="shopbox">
+            <span className="text-2xl font bold ml-[3vw] ">Shop Now</span>
       </div>
 
          <div className='bannerbox'>

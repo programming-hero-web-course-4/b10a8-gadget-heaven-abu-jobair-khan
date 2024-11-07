@@ -15,6 +15,7 @@ import Phone from './components/SmartPhones/Phone.jsx';
 import Watch from './components/Smartwatch/Watch.jsx';
 import ProductDetails from './components/Details/ProductDetails.jsx';
 import Dashboard from './components/DashBoard/Dasboard.jsx';
+import Statistics from './components/Statistics/Statistics.jsx';
 
 const route = createBrowserRouter([
   {
@@ -55,7 +56,12 @@ const route = createBrowserRouter([
       {
         path:'/dashboard',
         element:<Dashboard></Dashboard>
+      },
+      {
+        path:'/statistics',
+        element:<Statistics></Statistics>
       }
+      
     ]
   }
 ])
