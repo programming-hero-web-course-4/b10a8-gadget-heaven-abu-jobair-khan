@@ -13,10 +13,10 @@ const Products=()=>{
    // const {product_title,product_image,price}=products;
 
    return (
-      <div className="grid lg:grid-cols-3 gap-[50px]">
+      <div className="    grid grid-cols-1  lg:grid-cols-3  gap-[50px]">
          
          {
-            products.map(p=><Product key={p.category} product={p}></Product>)
+            products.map(p=><Product key={p.product_id} product={p}></Product>)
          }
          
       </div>

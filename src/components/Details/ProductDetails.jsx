@@ -1,14 +1,15 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import './ProductDetails.css';
 import { FaStar } from "react-icons/fa";
 import { FaRegStarHalfStroke } from "react-icons/fa6";
 import { CiShoppingCart } from "react-icons/ci";
 import { FaRegHeart } from "react-icons/fa";
+import { dataContext } from "../Statistics/ContextProvider/Provider";
 
 const ProductDetails=()=>{
 
-   
+   const {countCart , setCartCount ,cart , setCart}=useContext(dataContext);
    const {id}=useParams()
    const data=useLoaderData()
 
@@ -24,11 +25,18 @@ const ProductDetails=()=>{
    
 
 
-   console.log(product)
+   // console.log(product)
 
-   const { product_image , product_title, availability, price, description,specification ,rating  } = product
+   const { product_image , product_title, availability, price, description,specification ,rating  } = product;
 
-  
+   const handleCart=(newitem)=>{
+
+      setCart((prevItems) => [...prevItems, newitem]);
+
+      setCartCount(countCart+1);
+   }
+
+//   console.log(cart)
 
    return(
       <div>
@@ -61,7 +69,7 @@ const ProductDetails=()=>{
                   <h2 className="flex mt-[3vh]">Rating:  <div className="flex mx-4 mt-1"><FaStar /><FaStar /><FaStar /><FaStar /  ><FaRegStarHalfStroke /></div>  {rating}</h2>
 
                   <div className="flex">
-                  <button className="mt-[3vh] w-[12vw] h-[4vh] bg-blue-500 flex items-center justify-center">Add to Cart <CiShoppingCart className="text-2xl "/> </button>
+                  <button onClick={()=>handleCart(product)}   className="mt-[3vh] w-[12vw] h-[4vh] bg-blue-500 flex items-center justify-center">Add to Cart <CiShoppingCart className="text-2xl "/> </button>
                   <div className="mt-[15px] w-[3vw] h-[6vh] bg-white ml-[2vw] cursor-pointer"> <FaRegHeart className="text-3xl  mt-4 ml-4" /></div>
                   </div>
 

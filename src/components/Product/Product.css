@@ -1,17 +1,31 @@
 .cart{
 
-   width: 16vw;
+   width: 20vw;
    height: 46vh;
    border-radius: 20px;
    background-color: rgb(197, 198, 199);
 }
 
-img{
+.img-style{
 
    width: 14vw;
    height: 25vh;
    object-fit: cover;
    margin-left: 20px;
    margin-top: 20px;
+   
+}
+
+@media screen and (max-width:600px) {
+
+   .img-style{
+
+      width: 70vw;
+      height: 25vh;
+      object-fit: cover;
+      margin-left: 20px;
+      margin-top: 20px;
+      
+   }
    
 }

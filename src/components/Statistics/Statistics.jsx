@@ -2,8 +2,7 @@
 
 const Statistics=()=>{
 
-   return (
-
+   return(
       <div>
 
       </div>

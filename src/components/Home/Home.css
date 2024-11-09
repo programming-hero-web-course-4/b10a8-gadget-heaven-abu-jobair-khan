@@ -35,3 +35,61 @@
 
 }
 
+.products{
+
+   /* lg:w-[57vw]  mr-[10vw]  */
+
+   width: 57vw;
+   margin-right: 10vw;
+}
+
+
+@media screen and (max-width:600px) {
+
+   .sidebar{
+
+      margin-left: 7vw;
+      width: 85vw;
+      display: flex;
+      flex-direction: column;
+      
+       
+   }
+   .links{
+
+      margin-top: 3vh;
+      margin-left: 5vw;
+      font-size: 10px;
+      
+      width: 10vw;
+      height: 6vh;
+      background-color: bisque;
+      border-radius: 30px;
+      text-align: center;
+   
+   }
+
+   .active-link{
+
+      margin-top: 3vh;
+      margin-left: 5vw;
+      font-size: 10px;
+      font-weight: bold;
+      width: 10vw;
+      height: 6vh;
+      background-color: goldenrod;
+      border-radius: 30px;
+      text-align: center;
+   
+   }
+   
+
+   .responsbox{
+
+      position: relative;
+      bottom: 20vh;
+      width: 80vw;
+   }
+
+   
+}

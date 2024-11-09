@@ -10,6 +10,7 @@
    cursor: pointer;
 }
 
+
 .bannerbox{
 
    width: 65vw;
@@ -31,4 +32,36 @@
    object-fit: fill;
    
    
+}
+
+@media screen and (max-width:600px) {
+   .shopbox{
+      position: relative;
+      left: 36vw;
+      width: 25vw;
+      height: 4vh;
+   }
+
+   .bannerbox{
+
+      width: 68vw;
+      height: 30vh;
+      z-index: 1;
+      border: 5px solid white;
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      position: relative;
+      left: 17vw;
+      bottom: 35vh;
+   }
+
+   .img{
+
+      width: 62vw;
+      height: 29vh;
+      border-radius: 10px;
+      object-fit: fill;
+      position: relative;
+      right: 3vw;
+   }
 }

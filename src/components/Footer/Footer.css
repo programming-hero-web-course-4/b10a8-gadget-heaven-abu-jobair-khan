@@ -22,3 +22,25 @@
    position: relative ;
    top: 10vh;left: 10vw;
 }
+
+@media screen and (max-width:600px) {
+
+   .footer-box{
+
+      margin-top: 25vh;
+      width: 100%;
+      height: 85vh;
+      background-color: rgb(226, 201, 168);
+   }
+
+   .heading{
+
+      position: relative;
+      left: 10vw;
+      top: 5vh;
+      max-width: 80vw;
+   }
+   
+   
+   
+}

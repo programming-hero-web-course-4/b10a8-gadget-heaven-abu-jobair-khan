@@ -4,8 +4,13 @@ import { FaRegHeart } from "react-icons/fa";
 import './Nav.css';
 import { CgLayoutGrid } from "react-icons/cg";
 import { CiMenuFries } from "react-icons/ci";
+import { GrClose } from "react-icons/gr";
+import { useContext, useState } from "react";
+import { dataContext } from "./Statistics/ContextProvider/Provider";
 
 const Nav=()=>{
+
+  const { countCart }=useContext(dataContext)
 
   const location = useLocation();
 
@@ -13,7 +18,7 @@ const Nav=()=>{
 
   const isHome = location.pathname === '/' || location.pathname === '/laptop' || location.pathname === '/smartphone' || location.pathname === '/smartwatch'  ;
   const isDetails = matchPath('/details/:id', location.pathname);
-  const isDashboard=matchPath('/dashboard' , location.pathname);
+  const isDashboard=matchPath('/dashboard' , location.pathname) || matchPath('/dashboard/wishlist' , location.pathname);
   const isStatistics=matchPath('/statistics' , location.pathname);
 
 
@@ -31,12 +36,12 @@ ${isStatistics ? 'box-style' : ''}
 `
 
 const innerclass=`
-  ${isHome ? 'text-white text-xl font-bold sm:text-md ': ' '}
-  ${ isDetails ? 'text-black text-xl font-bold' : ' '}
- ${ isDashboard ? 'text-black text-xl font-bold' : ''}
- ${ isStatistics ? 'text-black text-xl font-bold' : ''}
+  ${isHome ? 'text-white text-xl font-bold max-[600px]:text-sm ': ' '}
+  ${ isDetails ? 'text-black text-xl font-bold max-[600px]:text-sm' : ' '}
+ ${ isDashboard ? 'text-black text-xl font-bold max-[600px]:text-sm' : ''}
+ ${ isStatistics ? 'text-black text-xl font-bold max-[600px]:text-sm' : ''}
 `
-
+ const [toggle, setToggle] = useState(false);
 
 
 
@@ -50,22 +55,31 @@ const innerclass=`
 
 
      <div className={className}>
-     <div className="relative left-[20vw] lg:left-0">
+     <div className="relative left-[30vw] lg:left-0">
         <h2 className={`mt-[5vh]   ${innerclass}`}>Gadget Heaven</h2>
       </div>
-      <div className="relative top-[5vh] right-[48vw]   max-[600px]:visible  md:hidden    lg:hidden">
-      <CiMenuFries  className="text-white text-xl "  />
+      <div onClick={()=>setToggle(!toggle)} className="text-black text-xl relative top-[5vh] right-[35vw]  max-[600px]:visible  md:hidden    lg:hidden">
+       {
+            toggle === false ? <CiMenuFries/> : <GrClose/>
+       }
       </div>
 
 
 
-        <div className="mt-[5vh]  w-[20vw] max-[600px]:hidden">
-          <ul className="flex justify-between">
+        <div className={`mt-[5vh]  w-[20vw]  `}>
+          <ul className={
+               ` max-[600px]:hidden    flex justify-around '}`
+          }>
             <li ><NavLink  className={ ({ isActive })=>`${innerclass} ${isActive ? 'underline' : ''}`}   to={'/'}>Home</NavLink></li>
             <li ><NavLink  className={({ isActive })=>`${innerclass} ${isActive ? 'underline' : ''}`}  to={'/dashboard'}>Dash Board</NavLink></li>
             <li ><NavLink   className={({ isActive })=>`${innerclass} ${isActive ? 'underline' : ''}`}  to={'/statistics'}>Statistics</NavLink></li>
           </ul>
         </div>
+
+          <div>
+            {countCart}
+          </div>
+
       <div className="mt-[5vh] flex ">
       <CiShoppingCart className="mr-3 text-2xl" />
       <FaRegHeart/>

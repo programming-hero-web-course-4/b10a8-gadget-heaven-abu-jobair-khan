@@ -16,6 +16,9 @@ import Watch from './components/Smartwatch/Watch.jsx';
 import ProductDetails from './components/Details/ProductDetails.jsx';
 import Dashboard from './components/DashBoard/Dasboard.jsx';
 import Statistics from './components/Statistics/Statistics.jsx';
+import Provider from './components/Statistics/ContextProvider/Provider.jsx';
+import Cart from './components/Cart/Cart.jsx';
+import Wishlist from './components/Wishlist/Wishlist.jsx';
 
 const route = createBrowserRouter([
   {
@@ -55,7 +58,17 @@ const route = createBrowserRouter([
       },
       {
         path:'/dashboard',
-        element:<Dashboard></Dashboard>
+        element:<Dashboard></Dashboard>,
+        children:[
+          {
+            path:'',
+            element:<Cart></Cart>
+          },
+          {
+            path:'/dashboard/wishlist',
+            element:<Wishlist></Wishlist>
+          }
+        ]
       },
       {
         path:'/statistics',
@@ -68,6 +81,10 @@ const route = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={route}/>
+   <Provider>
+   <RouterProvider router={route}>
+      <Root></Root>
+    </RouterProvider>
+   </Provider>
   </StrictMode>,
 )
