@@ -1,8 +1,10 @@
-# React + Vite
+# Gadget Heaven 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- live link:https://monumental-yeot-d811de.netlify.app/
+- fundamental react components are ( nested routings, data loader, DOM rendering , useLocation, useNavigate, etc.)
+- Context API  has been used for handling and managing data . createContext, ContextProvider is used for wrapping the root component. and the values are passed to many child components.
+- features of the project are: 1. displaying active button
+  2. Single page application using react routng/
+  3.Using react DOM for rendering data.
+  4. Use of context API
+  5. Many react hooks are used.  
