@@ -19,6 +19,7 @@ import Statistics from './components/Statistics/Statistics.jsx';
 import Provider from './components/Statistics/ContextProvider/Provider.jsx';
 import Cart from './components/Cart/Cart.jsx';
 import Wishlist from './components/Wishlist/Wishlist.jsx';
+import Info from './components/Info/Info.jsx';
 
 const route = createBrowserRouter([
   {
@@ -31,7 +32,7 @@ const route = createBrowserRouter([
          children:[
           {
             path:'/',
-            loader:()=>fetch('./fakeData.json'),
+            // loader:()=>fetch('./fakeData.json'),
             element:<Products></Products>
           },
           {
@@ -61,7 +62,7 @@ const route = createBrowserRouter([
         element:<Dashboard></Dashboard>,
         children:[
           {
-            path:'',
+            path:'cart',
             element:<Cart></Cart>
           },
           {
@@ -73,6 +74,10 @@ const route = createBrowserRouter([
       {
         path:'/statistics',
         element:<Statistics></Statistics>
+      },
+      {
+        path:'/information',
+        element:<Info></Info>
       }
       
     ]

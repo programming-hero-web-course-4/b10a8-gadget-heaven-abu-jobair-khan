@@ -1,0 +1,97 @@
+
+
+.path{
+
+   font-size: 30px;
+   font-weight: bold;
+   position: relative;
+   left: 10vw;
+   bottom: 10vh;
+}
+
+.cart-container{
+
+   margin-top: 20px;
+   width: 55vw;
+   height: 17vh;
+   background-color: bisque;
+   border-radius: 14px;
+   position: relative;
+   left: 17vw;
+   display: flex;
+   
+}
+
+.cart-container>img{
+
+   height: 15vh;
+   width: 15vw;
+   object-fit: contain;
+   position: relative;
+   bottom: 10px;
+   right: 15px;
+}
+
+.totalprice{
+
+   display: flex;
+   position: relative;
+   left: 40vw;
+   bottom: 14vh;
+   font-size: 24px;
+
+
+}
+
+.sort{
+
+   width: 9vw;
+   height: 6vh;
+   text-align: center;
+   border: 2px solid  black ;
+   background-color: rgb(148, 68, 223);
+   color: white;
+   border-radius: 15px;
+   position: relative;
+   left: 60vw;
+   bottom: 17vh;
+   cursor: pointer;
+}
+
+.remove{
+
+   position: relative;
+   left: 30vw;
+   bottom: 7vh;
+   font-size: 30px;
+   cursor: pointer;
+}
+
+.purchase{
+
+   width: 9vw;
+   height: 5vh;
+   text-align: center;
+   background-color: rgb(224, 110, 110);
+   border: 2px solid black;
+   border-radius: 20px;
+   position: relative;
+   left: 74vw;
+   bottom: 23vh;
+   cursor: pointer;
+}
+
+.disabled{
+
+   cursor: not-allowed;
+   width: 9vw;
+   height: 5vh;
+   text-align: center;
+   background-color: rgba(230, 140, 140, 0.418);
+   border: 2px solid black;
+   border-radius: 20px;
+   position: relative;
+   left: 74vw;
+   bottom: 23vh;
+
+}

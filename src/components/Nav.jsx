@@ -10,7 +10,7 @@ import { dataContext } from "./Statistics/ContextProvider/Provider";
 
 const Nav=()=>{
 
-  const { countCart }=useContext(dataContext)
+  const { countCart,wishCount }=useContext(dataContext)
 
   const location = useLocation();
 
@@ -18,8 +18,9 @@ const Nav=()=>{
 
   const isHome = location.pathname === '/' || location.pathname === '/laptop' || location.pathname === '/smartphone' || location.pathname === '/smartwatch'  ;
   const isDetails = matchPath('/details/:id', location.pathname);
-  const isDashboard=matchPath('/dashboard' , location.pathname) || matchPath('/dashboard/wishlist' , location.pathname);
+  const isDashboard=matchPath('/dashboard' , location.pathname) || matchPath('/dashboard/wishlist' , location.pathname) || matchPath('/dashboard/cart', location.pathname);
   const isStatistics=matchPath('/statistics' , location.pathname);
+  const isInfo=matchPath('/information' , location.pathname);
 
 
   const className = `
@@ -27,19 +28,22 @@ const Nav=()=>{
   ${isDetails ? 'rest-other' : ''} 
   ${isDashboard ? 'rest-other' : ''}
   ${isStatistics ? 'rest-other' : ''}
+  ${isInfo ? 'rest-other' : ''}
 `
 const outerBox= `
 ${isHome ? 'boxStyle' : ''}
 ${isDetails ? 'box-style' : ''} 
-${isDashboard ? 'box-style' : ''}
-${isStatistics ? 'box-style' : ''}
+${isDashboard ? 'box-style1' : ''}
+${isStatistics ? 'box-style1' : ''}
+${isInfo ? 'box-style1' : ''}
 `
 
 const innerclass=`
   ${isHome ? 'text-white text-xl font-bold max-[600px]:text-sm ': ' '}
-  ${ isDetails ? 'text-black text-xl font-bold max-[600px]:text-sm' : ' '}
- ${ isDashboard ? 'text-black text-xl font-bold max-[600px]:text-sm' : ''}
- ${ isStatistics ? 'text-black text-xl font-bold max-[600px]:text-sm' : ''}
+  ${ isDetails ? 'text-black  text-xl font-bold max-[600px]:text-sm' : ' '}
+ ${ isDashboard ? 'text-black         text-xl font-bold max-[600px]:text-sm' : ''}
+ ${ isStatistics ? 'text-black       text-xl font-bold max-[600px]:text-sm' : ''}
+ ${ isInfo ? 'text-black       text-xl font-bold max-[600px]:text-sm' : ''}
 `
  const [toggle, setToggle] = useState(false);
 
@@ -66,31 +70,43 @@ const innerclass=`
 
 
 
-        <div className={`mt-[5vh]  w-[20vw]  `}>
+        <div className={`mt-[5vh]  w-[30vw]  `}>
           <ul className={
                ` max-[600px]:hidden    flex justify-around '}`
           }>
             <li ><NavLink  className={ ({ isActive })=>`${innerclass} ${isActive ? 'underline' : ''}`}   to={'/'}>Home</NavLink></li>
             <li ><NavLink  className={({ isActive })=>`${innerclass} ${isActive ? 'underline' : ''}`}  to={'/dashboard'}>Dash Board</NavLink></li>
             <li ><NavLink   className={({ isActive })=>`${innerclass} ${isActive ? 'underline' : ''}`}  to={'/statistics'}>Statistics</NavLink></li>
+            <li ><NavLink   className={({ isActive })=>`${innerclass} ${isActive ? 'underline' : ''}`}  to={'/information'}>Information</NavLink></li>
           </ul>
         </div>
 
-          <div>
+          
+
+         
+
+      
+      <div className=" relative left-[13vw] top-[2vh]">
+          <div className=" ">
             {countCart}
           </div>
+          <CiShoppingCart className="" />
+    
+      </div>
 
-      <div className="mt-[5vh] flex ">
-      <CiShoppingCart className="mr-3 text-2xl" />
-      <FaRegHeart/>
+      <div className="relative bottom-[-2.5vh]">
+          <div className="">
+            {wishCount}
+          </div>
+          <FaRegHeart></FaRegHeart>
       </div>
 
 
      </div>
       
-    
+  </div>
       
-    </div>
+   
     
    )
 }

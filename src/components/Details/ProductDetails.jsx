@@ -6,14 +6,16 @@ import { FaRegStarHalfStroke } from "react-icons/fa6";
 import { CiShoppingCart } from "react-icons/ci";
 import { FaRegHeart } from "react-icons/fa";
 import { dataContext } from "../Statistics/ContextProvider/Provider";
+import {  toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ProductDetails=()=>{
 
-   const {countCart , setCartCount ,cart , setCart}=useContext(dataContext);
+   const {countCart , setCartCount ,cart , setCart , setWish ,wish,wishCount,setWishCount}=useContext(dataContext);
    const {id}=useParams()
    const data=useLoaderData()
 
-   
+   const [number , setNumber] = useState([]);
    const [product,setProduct] = useState([]);
 
    useEffect( ()=>{
@@ -27,19 +29,50 @@ const ProductDetails=()=>{
 
    // console.log(product)
 
-   const { product_image , product_title, availability, price, description,specification ,rating  } = product;
+   const { product_image , product_title, availability, price, description,specification ,rating,product_id } = product;
 
    const handleCart=(newitem)=>{
 
       setCart((prevItems) => [...prevItems, newitem]);
 
       setCartCount(countCart+1);
+     toast.success(" added in the cart !!")
    }
 
 //   console.log(cart)
 
+
+   const addTowish=(newWishItem)=>{
+
+         setWish((prevWishItems) => [...prevWishItems,newWishItem]);
+         setWishCount(wishCount+1);
+         toast.success(" added in the wishlist !!")
+
+   }
+
+
+   
+
+
+
+   useEffect( ()=>{
+
+      const extractId = [...wish].map( x=> x.product_id);
+      setNumber(extractId); 
+
+
+
+   } , [wish])
+
+   // console.log(wish);
+   // console.log(number);
+
+
+  
+
    return(
       <div>
+       
             <div >
                <h2 className="text-white font-bold  text-4xl relative bottom-[45vh] left-[40vw]">Product Details</h2>
                <p className=" text-white relative bottom-[40vh] left-[33vw] ">The product detailes section contains the detailed info of the product.</p>
@@ -70,7 +103,7 @@ const ProductDetails=()=>{
 
                   <div className="flex">
                   <button onClick={()=>handleCart(product)}   className="mt-[3vh] w-[12vw] h-[4vh] bg-blue-500 flex items-center justify-center">Add to Cart <CiShoppingCart className="text-2xl "/> </button>
-                  <div className="mt-[15px] w-[3vw] h-[6vh] bg-white ml-[2vw] cursor-pointer"> <FaRegHeart className="text-3xl  mt-4 ml-4" /></div>
+                  <div onClick={()=>addTowish(product)}  className={ number.includes(product_id) ? 'disabled-wish-btn' : 'wish-btn'}> <FaRegHeart className="text-3xl  mt-4 ml-4" /></div>
                   </div>
 
                 </div>

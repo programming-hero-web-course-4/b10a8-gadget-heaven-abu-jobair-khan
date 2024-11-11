@@ -1,0 +1,54 @@
+
+
+.dashlink{
+
+   width:20vw;
+   display: flex;
+   justify-content: space-between;
+   font-size: 30px;
+   font-weight: bold;
+   position: relative;
+   left:34vw;
+   bottom: 17vh;
+}
+
+.dash-intro{
+
+   position: relative;
+   bottom: 24vh;
+   left: 30vw;
+}
+
+.active{
+
+   width: 7vw;
+   height: 7vh;
+   background-color: antiquewhite;
+   border-radius: 15px;
+}
+
+
+
+@media screen and (max-width:600px ) {
+   
+   .dashlink{
+
+      width: 55vw;
+      font-size: 20px;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      right: 20px;
+      bottom: 20vh;
+   }
+
+   .dash-intro{
+
+      width: 40vw;
+   }
+
+   .active{
+
+      width: 30vw;
+   }
+}
